@@ -1,0 +1,9 @@
+.sec-container{
+    background-image: url('../../assets/svg/curve.svg');
+    background-repeat: no-repeat;
+    background-position: 200px -70px;
+}
+
+.dash{
+    color: #0000ff;
+}

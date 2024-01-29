@@ -6,7 +6,7 @@ import { useContext } from "react";
 import {Theme_Context} from '../../../context/theme-context'
 
 const Large_Screen_Nnavbar = () => {
-    const {toggle_darkmode} = useContext(Theme_Context)
+    const {toggle_darkmode,darkMode} = useContext(Theme_Context)
   return (
     <div className="hidden lg:flex gap-[4rem] items-center">
         <div className="flex gap-[1rem]">
@@ -17,7 +17,7 @@ const Large_Screen_Nnavbar = () => {
                 <IoSearchOutline size={20}/>
             </div>
             <div>
-                <LiaSunSolid size={20} onClick={toggle_darkmode}/>
+            { darkMode ? <LiaSunSolid size={25} onClick={toggle_darkmode}/> : <MdOutlineDarkMode size={25} onClick={toggle_darkmode}/> }
             </div>
         </div>
         <div className="flex space-x-4">

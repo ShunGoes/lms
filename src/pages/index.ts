@@ -1,0 +1,6 @@
+export {default as AssessmentPage} from './assessment-page/assessment-page'
+export {default as CoursePage} from './course-page/course-page'
+export {default as FeedbackPage} from './feedback-page/feedback-page'
+export {default as NotificationPage} from './notification-page/notification-page'
+export {default as PaymentPage} from './payment-page/payment-page'
+export {default as SettingsPage} from './settings-page/settings-page'
