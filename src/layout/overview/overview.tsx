@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom"
 import Navbar from "../../components/navbar/navbar"
 import Navigation_List from "../../components/navigation-list/navigation-list"
+import UserProfile from "../../components/user-profile/user.profile"
 
 const Overview = () => {
   return (
@@ -12,8 +13,8 @@ const Overview = () => {
             <div className="hidden lg:block col-span-2"> 
                 <Navigation_List />
             </div>
-            <div className="col-span-12 lg:col-span-8  h-[50rem] w-[90%] mx-auto lg:w-full lg:mx-0  "><Outlet /></div>
-            <div className="hidden lg:block col-span-2 border-2 border-red-500"> Navigation Component</div>
+            <div className="col-span-12 lg:col-span-8 h-auto  w-[90%] mx-auto lg:w-full lg:mx-0  lg:px-[1rem] "><Outlet /></div>
+            <div className="hidden lg:block col-span-2 "> <UserProfile /> </div>
         </div>
     </main>
   )

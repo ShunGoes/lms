@@ -12,9 +12,10 @@ const Mobile_Navbar = () => {
     useClickAway(ref, () => setIsOpen(false));
 
   return (
-    <div ref={ref} className='lg:hidden'>
+    <div ref={ref} className='lg:hidden z-10'>
         <Divide toggled={isOpen} toggle={setIsOpen} size={25} />
         <AnimatePresence>
+          {/* profile image and user name for mobile screen udemy type */}
         {isOpen && (
           <motion.div
             initial={{ opacity: 0 }}

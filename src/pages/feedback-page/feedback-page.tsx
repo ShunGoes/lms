@@ -1,7 +1,12 @@
+import { useTranslation } from "react-i18next";
 
 const FeedbackPage = () => {
+  const { t } = useTranslation();
   return (
-    <div>FeedbackPage</div>
+    <div>
+      {t('Welcome to React')}
+
+      </div>
   )
 }
 

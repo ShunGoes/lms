@@ -12,7 +12,7 @@ import SignUp from './pages/authentication/sign-up'
 function App() {
 
   return (
-    <main className='' id='elem'>
+    <main className='app' id='elem'>
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='signin' element={<SignIn />}/>
