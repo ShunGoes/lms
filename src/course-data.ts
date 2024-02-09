@@ -86,3 +86,103 @@ export const CourseData = [
       duration: '20mins'
     },
   ]
+export const PdfData = [
+    {
+      id: 1,
+      title: 'Alive B-Eloquent',
+      price: 250,
+      star: 3,
+      author: 'Jack Ma',
+      duration: '20mins'
+    },
+    {
+      id: 2,
+      title: 'Javascript Mastery',
+      price: 3500,
+      star: 4,
+      author: 'Jack Ma',
+      duration: '20mins'
+    },
+    {
+      id: 3,
+      title: 'Black Mores',
+      price: 25000,
+      star: 4,
+      author: 'Jack Ma',
+      duration: '20mins'
+    },
+    {
+      id: 4,
+      title: 'Alive B-Eloquent',
+      price: 120,
+      star: 4,
+      author: 'Jack Ma',
+      duration: '20mins'
+    },
+    {
+      id: 5,
+      title: 'Javascript Mastery',
+      price: 400,
+      star: 5,
+      author: 'Brad Traversy',
+      duration: '20mins'
+    },
+    {
+      id: 6,
+      title: 'Black Mores',
+      price: 450,
+      star: 4,
+      author: 'Brad Traversy',
+      duration: '20mins',
+      discount: 500,
+    },
+    {
+      id: 7,
+      title: 'Black Mores',
+      price: 200,
+      star: 4,
+      author: 'Brad Traversy',
+      duration: '20mins',
+      discount: 500,
+    },
+    {
+      id: 8,
+      title: 'Javascript Mastery',
+      price: 100,
+      star: 4,
+      author: 'Brad Traversy',
+      duration: '20mins'
+    },
+    {
+      id: 9,
+      title: 'Black Mores',
+      price: 30,
+      star: 4,
+      author: 'Brad Traversy',
+      duration: '20mins'
+    },
+    {
+      id: 10,
+      title: 'Alive B-Eloquent',
+      price: 2500,
+      star: 4,
+      author: 'Brad Traversy',
+      duration: '20mins'
+    },
+    {
+      id: 11,
+      title: 'Javascript Mastery',
+      price: 2000,
+      star: 5,
+      author: 'Brad Traversy',
+      duration: '20mins'
+    },
+    {
+      id: 12,
+      title: 'Alive B-Eloquent',
+      price: 2500,
+      star: 3,
+      author: 'Brad Traversy',
+      duration: '20mins'
+    },
+  ]

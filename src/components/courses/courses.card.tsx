@@ -12,7 +12,7 @@ interface CourseProps {
 
 const CourseCard: React.FC<CourseProps> = ({course} ) => {
   return (
-    <div className=" lg:h-[10rem] h-[9rem] w-full py-3 flex mb-3">
+    <div className=" lg:h-[8rem] h-[9rem] w-full py-3 flex mb-3 ">
       <div className="flex w-full  gap-3 lg:gap-4 lg:w-8/12 h-full">
         <div className="w-4/12 lg:w-3/12 h-full  rounded-lg ">
           <img src={Vid1} alt="" className="h-full w-full  object-cover rounded-lg"/>

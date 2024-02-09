@@ -7,6 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 import i18n from "i18next";
 import {  initReactI18next } from "react-i18next"
 import LanguageDetector from 'i18next-browser-languagedetector';
+import { CourseContextProvider } from "./context/course-context.tsx";
 
 
 i18n
@@ -43,7 +44,9 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
       <Theme_context_provider>
-        <App />
+        <CourseContextProvider>
+        < App />
+        </CourseContextProvider>
       </Theme_context_provider>
     </BrowserRouter>
   </React.StrictMode>
