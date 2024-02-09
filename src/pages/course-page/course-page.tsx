@@ -46,7 +46,7 @@ const CoursePage = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   // pagination goes here
-  const post_per_page = 4;
+  const post_per_page = filteredData.id === 1 ? 6 : 4;
   const number_of_pages = Math.ceil(filteredData.view.length / post_per_page);
   const last_item = currentPage * post_per_page;
   const first_item = last_item - post_per_page;
@@ -69,7 +69,7 @@ const CoursePage = () => {
   return (
     <section className="">
       <LastCourse />
-      <ul className={`flex list-none border-4 gap-[1.5rem] `}>
+      <ul className={`flex list-none  gap-[1.5rem] mt-[3rem] `}>
         {tabs.map((tab) => (
           <li
             key={tab.id}
@@ -132,7 +132,13 @@ const CoursePage = () => {
             </div>
           </div>
         </div>
-        <div className="max-h-[750px] h-[750px]">
+
+        <div className="max-h-[1500px] h-[750px]  mt-[2rem] ">
+        <div className="flex h-[50px] items-center bg-[#0000ff] text-white  ">
+            <h3 className="w-full  lg:w-8/12  text-center  ">Courses</h3>
+            <h3 className="w-2/12  text-center hidden lg:block ">Duration</h3>
+            <h3 className="w-2/12  text-center hidden lg:block">Ratings</h3>
+          </div>
         {filteredData.id === 0 && (
           <Videos
             currentPage={currentPage}

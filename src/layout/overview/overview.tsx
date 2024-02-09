@@ -3,9 +3,11 @@ import Navbar from "../../components/navbar/navbar"
 import Navigation_List from "../../components/navigation-list/navigation-list"
 import UserProfile from "../../components/user-profile/user.profile"
 
+import './overflow.css'
+
 const Overview = () => {
   return (
-    <main>
+    <main className="h-screen  lg:h-screen">
         <div>
         <Navbar/>
         </div>
@@ -13,7 +15,7 @@ const Overview = () => {
             <div className="hidden lg:block col-span-2"> 
                 <Navigation_List />
             </div>
-            <div className="col-span-12 lg:col-span-8 h-auto  w-[90%] mx-auto lg:w-full lg:mx-0  lg:px-[1rem] "><Outlet /></div>
+            <div className="col-span-12 lg:col-span-8  outlet  w-[90%] mx-auto lg:w-full lg:mx-0  lg:px-[1rem] "><Outlet /></div>
             <div className="hidden lg:block col-span-2 "> <UserProfile /> </div>
         </div>
     </main>

@@ -15,7 +15,7 @@ const Pdf: React.FC<CoursePropType> = ({
         animate={{opacity: 1}}
         exit={{opacity: 0}}
         className="h-full  ">
-        <div className="lg:flex border-2">
+        <div className="lg:flex flex-wrap shrink-0 gap-[0.5rem] justify-between lg:mt-3">
             {
                 currentItems.map(pdf => <PdfCard   pdf={pdf}/>)
             }
