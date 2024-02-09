@@ -7,7 +7,7 @@ type PdfCardProp = {
 
 const PdfCard: React.FC<PdfCardProp> = ({pdf}) => {
   return (
-    <div className="h-[20rem]  flex flex-col lg:w-[30%] flex-wrap shrink-0 border-2 my-5 rounded-lg shadow-2xl">
+    <div className="h-[20rem]  flex flex-col lg:w-[30%] flex-wrap shrink-0  my-5 rounded-lg shadow-2xl mt-[2rem] lg:mt-0 border-2">
         <div className='h-[50%] w-full'>
             <img src={Vid1} alt="pdf picture" className='object-cover rounded-t-2xl h-full w-full' />
         </div>

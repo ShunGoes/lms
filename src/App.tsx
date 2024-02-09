@@ -1,6 +1,7 @@
+import {Route,Routes} from 'react-router-dom'
+
 import './App.css'
 import Overview from './layout/overview/overview'
-import {Route,Routes} from 'react-router-dom'
 import DashboardPage from './pages/dashboard-page/dashboard-page'
 import Home from './pages/home/home'
 import {AssessmentPage,FeedbackPage,CoursePage,NotificationPage,PaymentPage,SettingsPage} from './pages'
