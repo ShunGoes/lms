@@ -1,8 +1,12 @@
 import User from "../../assets/svg/user.png"
+import './user-profile.css'
+
 
 const UserProfile = () => {
   return (
-    <div className=" h-[15rem] flex flex-col relative mb-[3rem] ">
+    <section>
+
+    <div className=" h-[15rem] flex flex-col relative  border-4">
       <div className="w-full  bg-[#0000ff] h-full rounded-t-lg" />
       <div className="w-full    h-full" />
       <div className=" absolute w-full h-full  flex flex-col justify-center items-center gap-3">
@@ -20,6 +24,13 @@ const UserProfile = () => {
         </div>
       </div>
     </div>
+
+    <div className="h-[40vh] border-4">
+        <h1>
+          recent happenings
+        </h1>
+      </div>
+    </section>
   );
 };
 
