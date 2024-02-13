@@ -8,7 +8,7 @@ import "./overflow.css";
 
 const Overview = () => {
   return (
-    <main className="h-screen  lg:h-screen">
+    <main className="h-screen  lg:h-screen ">
       <div>
         <Navbar />
       </div>

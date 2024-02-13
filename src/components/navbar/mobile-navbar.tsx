@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom'
 const Mobile_Navbar = () => {
     const [isOpen,setIsOpen] = useState(false)
     const ref = useRef(null)
-    const routes = ['Home','About']
     useClickAway(ref, () => setIsOpen(false));
 
   return (

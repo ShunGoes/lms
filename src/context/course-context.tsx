@@ -1,5 +1,4 @@
 import { createContext } from "react";
-import { CourseData } from "../course-data";
 
 interface ChildrenType  {
     children: React.ReactNode

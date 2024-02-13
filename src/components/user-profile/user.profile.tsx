@@ -1,12 +1,13 @@
 import User from "../../assets/svg/user.png"
+import NotifsCard from "../notifs-card/notifs-card";
 import './user-profile.css'
 
 
 const UserProfile = () => {
   return (
-    <section>
+    <section className="flex flex-col justify-between gap-4  h-full p-2">
 
-    <div className=" h-[15rem] flex flex-col relative  border-4">
+    <div className=" h-[15rem] flex flex-col relative  ">
       <div className="w-full  bg-[#0000ff] h-full rounded-t-lg" />
       <div className="w-full    h-full" />
       <div className=" absolute w-full h-full  flex flex-col justify-center items-center gap-3">
@@ -25,10 +26,20 @@ const UserProfile = () => {
       </div>
     </div>
 
-    <div className="h-[40vh] border-4">
-        <h1>
+    <div className="h-[40vh] flex flex-col justify-between ">
+        <p className="font-semibold capitalize">
           recent happenings
-        </h1>
+        </p>
+        <div className=" h-4/5 notifs">
+
+        <NotifsCard />
+        <NotifsCard />
+        <NotifsCard />
+        <NotifsCard />
+        <NotifsCard />
+        <NotifsCard />
+        <NotifsCard />
+        </div>
       </div>
     </section>
   );
