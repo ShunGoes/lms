@@ -5,6 +5,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { motion } from "framer-motion";
+import Chart from "../../components/chart/chart";
+import ScoreBoard from "../../components/score-board/score-board";
 
 const DashboardPage = () => {
   return (
@@ -72,6 +74,12 @@ const DashboardPage = () => {
           </div>
         </SwiperSlide>
       </Swiper>
+
+      {/* Charts and graphs */}
+          <Chart />
+
+          {/* Score board  */}
+          <ScoreBoard />
     </section>
   );
 };

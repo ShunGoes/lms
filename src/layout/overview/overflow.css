@@ -10,8 +10,8 @@
     height: 81vh;
   }
   .outlet::-webkit-scrollbar {
-    width: 10px;
-    background: #0000ff;
+    width: 7px;
+    /* background: #0000ff; */
     display: block;
   }
   .outlet::-webkit-scrollbar-track {
@@ -19,5 +19,7 @@
   }
   .outlet::-webkit-scrollbar-thumb {
     background: #0000ff;
+    border-radius: 10px;
+    /* width:7px */
   }
 }
