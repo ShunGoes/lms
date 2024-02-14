@@ -1,0 +1,10 @@
+.score-board{
+    overflow: auto;
+}
+.score-board::-webkit-scrollbar{
+    width: 5px;
+}
+.score-board::-webkit-scrollbar-thumb{
+    /* background: blue; */
+
+}
