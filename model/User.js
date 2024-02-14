@@ -12,7 +12,25 @@ emailAddress: {
 password: {
     type: String,
     required: true
-}
+},
+fullName: {
+    type: String,
+    required : true
+},
+location : {
+
+    type: String
+},
+ isInstructor: {
+    type: Boolean
+},
+isAdmin: {
+    type: Boolean
+},
+courseEnrolled: {
+    type: Array,
+    default: []
+},
 })
 
 module.exports = mongoose.model("User", UserSchema)
