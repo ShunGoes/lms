@@ -9,9 +9,13 @@ const Mobile_Navbar = () => {
     const [isOpen,setIsOpen] = useState(false)
     const ref = useRef(null)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     
 >>>>>>> 4b9430a (notification page and assessment page)
+=======
+    
+>>>>>>> 4b9430a8d5cf49282e7070b35d4952e5a85ec17c
     useClickAway(ref, () => setIsOpen(false));
 
   return (
