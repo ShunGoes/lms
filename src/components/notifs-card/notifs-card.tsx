@@ -1,18 +1,56 @@
-import Vid1 from '../../assets/images/vid1.jpg'
+import { useState } from "react";
+import { Notification } from "../../components/notifs-data/notifs-data";
 
-
-const NotifsCard = () => {
-  return (
-    <div className='w-full h-[3rem]  flex gap-2 my-1'>
-      <div className="w-[30px] h-[30px] rounded-full ">
-          <img src={Vid1} alt="" className="w-full h-full rounded-full" />
-      </div>
-      <div className="flex flex-col gap-[1px] w-10/12 ">
-        <p className="text-[11px] overflow-hidden pl-1 truncate ...">Introducing Design Systemsnnnnmmmmmmmmmmmn</p>
-        <small className="text-gray-400 text-[8px]">Lorem ipsum dolor sit.</small>
-      </div>
-    </div>
-  )
+interface NotificationCardProps {
+  notification: Notification;
+  onMarkRead: (id: number, read: boolean) => void;
+  onDelete: (id: number) => void;
 }
 
-export default NotifsCard
+const NotifsCard: React.FC<NotificationCardProps> = ({
+  notification,
+  onMarkRead,
+  onDelete,
+}) => {
+  const [checked, setChecked] = useState(notification.read);
+  
+
+  const handleCheckedBox = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { checked } = e.target;
+    setChecked(checked);
+    onMarkRead(notification.id, checked);
+  };
+
+  const handleDelete = () => {
+    onDelete(notification.id);
+  };
+
+  const markAsRead = () => {
+    onMarkRead(notification.id, true);
+    setChecked(true);
+  };
+
+  return (
+    <div className="border-4 flex justify-between p-1 mb-2">
+      <div className="flex gap-1">
+        <div>
+          <input
+            type="checkbox"
+            checked={checked}
+            onChange={handleCheckedBox}
+          />
+        </div>
+        <div>
+          <h3> {notification.type} </h3>
+          <p>{notification.message} </p>
+        </div>
+      </div>
+      <div className="flex gap-2">
+        {!checked && <button onClick={markAsRead}>Mark as read</button>}
+        <button onClick={handleDelete}> Delete </button>
+      </div>
+    </div>
+  );
+};
+
+export default NotifsCard;

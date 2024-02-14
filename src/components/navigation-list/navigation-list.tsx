@@ -10,10 +10,9 @@ const Navigation_List = () => {
     setIsActive(id);
   };
   console.log(isActive);
-  
+
   return (
     <aside className="">
-     
       {LINKS.map((link) => (
         <Link to={link.link} key={link.id}>
           <motion.div
@@ -29,7 +28,7 @@ const Navigation_List = () => {
               isActive === link.id
                 ? " text-[#0000ff] rounded-xl font-extrabold "
                 : "text-white"
-             } w-full   h-[50px] flex gap-9 items-center px-2 cursor-pointer relative opacity-100`}
+            } w-full   h-[50px] flex gap-9 items-center px-2 cursor-pointer relative opacity-100`}
             onClick={() => handleClick(link.id)}
           >
             {link.icon}

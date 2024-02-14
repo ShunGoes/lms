@@ -8,6 +8,10 @@ import { Link } from 'react-router-dom'
 const Mobile_Navbar = () => {
     const [isOpen,setIsOpen] = useState(false)
     const ref = useRef(null)
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 4b9430a (notification page and assessment page)
     useClickAway(ref, () => setIsOpen(false));
 
   return (
