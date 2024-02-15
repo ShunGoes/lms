@@ -1,5 +1,5 @@
 import { useState } from "react";
-import NotifsCard from "../../components/notifs-card/notifs-card";
+import NotifsCard from "../../components/notificationItem/notificationItem";
 import { notifsTest } from "../../components/notifs-data/notifs-data";
 
 const NotificationPage = () => {
