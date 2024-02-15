@@ -13,10 +13,6 @@ const NotifsCard: React.FC<NotificationCardProps> = ({
   onDelete,
 }) => {
   const [checked, setChecked] = useState(notification.read);
-<<<<<<< HEAD
-  
-=======
->>>>>>> 4b9430a8d5cf49282e7070b35d4952e5a85ec17c
 
   const handleCheckedBox = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { checked } = e.target;
@@ -56,8 +52,4 @@ const NotifsCard: React.FC<NotificationCardProps> = ({
   );
 };
 
-<<<<<<< HEAD
 export default NotifsCard;
-=======
-export default NotifsCard;
->>>>>>> 4b9430a8d5cf49282e7070b35d4952e5a85ec17c
